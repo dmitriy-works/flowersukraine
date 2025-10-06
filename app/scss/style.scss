@@ -5,3 +5,357 @@
 @use "../../node_modules/nouislider/dist/nouislider.css";
 @use "vars";
 @use "media";
+
+body {
+  @extend %museo-300;
+  font-size: 16px;
+  line-height: 1.3;
+  color: vars.$color-accent;
+  &.scroll-lock {
+    overflow: hidden;
+  }
+}
+.header {
+  &__top-inner {
+    display: flex;
+    align-items: center;
+  }
+  &__top {
+    font-size: 14px;
+    color: #fff;
+    padding: 15px 0;
+    background-color: vars.$color-bg;
+  }
+  &__top-selects {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+  }
+  &__top-select {
+    display: flex;
+    gap: 15px;
+    cursor: pointer;
+    padding-right: 15px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 9px;
+      right: 0;
+      width: 7px;
+      height: 4px;
+      background-image: url("../images/arrow-down.svg");
+      background-repeat: no-repeat;
+    }
+  }
+  &__top-select__text {
+    color: vars.$color-accent;
+  }
+  &__top-list {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-left: 75px;
+  }
+  &__top-item {
+    cursor: pointer;
+    padding-left: 26px;
+    position: relative;
+  }
+  &__top-itemicon {
+    position: absolute;
+    top: 3px;
+    left: 0;
+  }
+  &__top-linkbookmarks {
+    position: relative;
+    padding-left: 26px;
+  }
+  &__top-linkdelivery {
+    padding-left: 10px;
+  }
+  &__top-linknumber {
+    position: absolute;
+    top: -3px;
+    left: 14px;
+    width: 16px;
+    height: 16px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 50%;
+    color: vars.$color-bg;
+    background-color: rgb(255, 255, 255, 0.7);
+  }
+  &__top-login {
+    display: flex;
+    gap: 16px;
+    margin-left: auto;
+    padding-left: 35px;
+    position: relative;
+  }
+  &__top-loginicon {
+    position: absolute;
+    top: 3px;
+    left: 0;
+  }
+  &__top-btnenter {
+    position: relative;
+    &::after {
+      content: "|";
+      position: absolute;
+      top: 2px;
+      right: -10px;
+    }
+  }
+  &__actions-item {
+    position: relative;
+  }
+  &__actionsheart,
+  &__actionscart {
+    position: absolute;
+    top: -5px;
+    right: -6px;
+    width: 16px;
+    height: 16px;
+    color: #fff;
+    font-size: 8px;
+    line-height: 16px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: vars.$color-accent;
+  }
+  &__contacts-phone {
+    color: vars.$color-primary;
+    text-align: right;
+  }
+  &__actions-price {
+    color: vars.$color-primary;
+  }
+  &__top-select {
+    position: relative;
+  }
+  &__top-selectcurrent__list {
+    display: none;
+    @extend %Euclid-400;
+    color: vars.$color-bg;
+    position: absolute;
+    top: 32px;
+    min-width: 200px;
+    width: 100%;
+    border-radius: 3px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 1px 6px;
+    z-index: 10;
+  }
+  &__top-selectcurrent__item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    border-bottom: 1px solid vars.$color-bg;
+    &:last-child {
+      border-bottom: none;
+    }
+    span {
+      color: vars.$color-accent;
+    }
+  }
+  &__top-selectcurrent__item + .header__top-selectcurrent__item {
+    padding-top: 10px;
+  }
+  .header__top-select:hover .header__top-selectcurrent__list {
+    display: block;
+  }
+  &__top-lang--active.header__top-selectcurrent__item {
+    color: #fff;
+    background-color: vars.$color-accent;
+    .header__top-lang {
+      color: #fff;
+    }
+  }
+  &__box-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0 60px;
+  }
+  &__menu-list {
+    display: flex;
+    gap: 40px;
+    order: 1;
+  }
+  &__box-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+  }
+  &__form {
+    display: flex;
+    gap: 20px;
+    position: relative;
+  }
+  &__input-category {
+    padding-left: 20px;
+  }
+  &__category-btn {
+    position: absolute;
+    top: -3px;
+    left: 0;
+  }
+  &__product-btn {
+    position: absolute;
+    right: 20px;
+  }
+  &__form-btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+    background-color: transparent;
+    z-index: 5;
+  }
+  &__input {
+    width: 100%;
+    border: none;
+    padding-bottom: 8px;
+    @extend %museo-300;
+    font-size: 14px;
+    color: vars.$color-primary;
+    border-bottom: 1px solid vars.$color-bg;
+    background-color: transparent;
+  }
+  &__input-category {
+    max-width: 220px;
+    padding-left: 20px;
+  }
+  &__input-product {
+    padding-right: 50px;
+  }
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  &__social-list {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  &__actions-list {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+  &__menu-item {
+    font-size: 16px;
+    @extend %museo-900;
+    color: vars.$color-bg;
+  }
+  &__menu-itemproduct {
+    position: relative;
+  }
+  &__menu-linkproduct {
+    color: vars.$color-accent;
+    padding-right: 20px;
+  }
+  &__menu-btn {
+    position: absolute;
+    top: -2px;
+    right: 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+    background-color: transparent;
+    z-index: 5;
+  }
+}
+.itemproduct {
+  position: relative;
+  &__dropdown-list {
+    position: absolute;
+    top: 100%;
+    min-width: 240px;
+    width: 100%;
+    @extend%museo-300;
+    border: 1px solid vars.$color-accent;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    display: none;
+    transition: all 0.5s ease-in-out;
+  }
+
+  &__dropdown-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 15px;
+    &:hover {
+      color: #ffffff;
+      @extend%museo-900;
+      background-color: vars.$color-accent;
+    }
+  }
+  .itemproduct__dropdown-item:hover .itemproduct__dropdown-icons svg path {
+    stroke: #ffffff;
+  }
+  &__dropdown-icons {
+    margin-top: 3px;
+    cursor: pointer;
+    &.active svg {
+      transform: rotate(90deg);
+    }
+  }
+}
+.itemproduct.open .itemproduct__dropdown-list {
+  display: block;
+}
+.sub__dropdown-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+.itemproduct__dropdown-item.open .sub__dropdown-list {
+  max-height: 500px;
+  display: block;
+}
+.itemproduct__dropdown-itembouquet {
+  position: relative;
+}
+.sub-dropdown {
+  display: none;
+}
+.sub-dropdown__bouquet {
+  position: absolute;
+  left: 245px;
+  min-width: 250px;
+  padding: 15px;
+  background-color: #ffffff;
+  border: 1px solid vars.$color-accent;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.sub-item__bouquet {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 180px;
+  color: #333;
+  @extend %museo-300;
+  transition: background-color 0.3s ease-in-out;
+}
+.sub-item__bouquet:hover {
+  color: #fff;
+  @extend%museo-900;
+  border-radius: 3px;
+  background-color: vars.$color-accent;
+}
+.linkproduct-btn svg {
+  transition: transform 0.3s ease;
+}
+.itemproduct.open .linkproduct-btn svg {
+  transform: rotate(180deg);
+}

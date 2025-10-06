@@ -1,44 +1,34 @@
- $color-accent: #3B2317;
- $color-primary: #513C27;
- $color-text-muted: #94897C;
- $bg-primary: #e9e1d7;
+$color-accent: #bc314d;
+$color-bg: #333333;
+$color-primary: #828282;
+$color-text-muted: #bdbdbd;
 
- %opensans-400 {
-  font-family: 'OpenSans-Regular', sans-serif; 
-  font-weight: 400;
- }
-
- %opensans-700 {
-  font-family: 'OpenSans-Bold', sans-serif;
-  font-weight: 700;
- }
-
- %opensans-300 {
-  font-family: 'OpenSans-Light', sans-serif; 
-  font-weight: 300;
- }
-
- %lora-400 {
-  font-family: 'Lora-Regular', sans-serif;
-  font-weight: 400; 
- }
-
- %lora-500 {
-  font-family: 'Lora-Medium', serif; 
-  font-weight: 500;
- }
-
- %inter-400 {
-  font-family: 'Inter-Regular', sans-serif;   
-  font-weight: 400;
- }
-
-%button-reset {
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 0;
-  padding: 0;
-  background-color: transparent;
+%museo-100 {
+  font-family: "MuseoSansCyrl-Thin", sans-serif;
+  font-weight: 100;
 }
 
+%museo-300 {
+  font-family: "MuseoSansCyrl-Regular", sans-serif;
+  font-weight: 300;
+}
+
+%museo-900 {
+  font-family: "MuseoSansCyrl-Bold", sans-serif;
+  font-weight: 900;
+}
+
+%Euclid-400 {
+  font-family: "Euclid-Regular", sans-serif;
+  font-weight: 400;
+}
+
+%Euclid-500 {
+  font-family: "Euclid-Medium", sans-serif;
+  font-weight: 500;
+}
+
+%Euclid-600 {
+  font-family: "Euclid-SemiBold", sans-serif;
+  font-weight: 600;
+}
