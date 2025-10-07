@@ -359,3 +359,128 @@ body {
 .itemproduct.open .linkproduct-btn svg {
   transform: rotate(180deg);
 }
+.footer {
+  color: #fff;
+  background-color: vars.$color-bg;
+  &__top {
+    padding: 40px 0 30px;
+    border-bottom: 1px solid vars.$color-accent;
+  }
+  &__top-inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  &__top-item {
+    min-width: 205px;
+  }
+  &__top-title {
+    font-size: 16px;
+    @extend %museo-900;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+  }
+  &__top-listitem {
+    font-size: 14px;
+    @extend %museo-300;
+    text-transform: uppercase;
+  }
+  &__top-listitem + .footer__top-listitem {
+    padding-top: 15px;
+  }
+  &__bottom {
+    padding: 25px 0 50px;
+  }
+  &__bottom-text {
+    @extend %museo-300;
+  }
+  &__bottom-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__bottom-list {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+}
+.promo {
+  padding-bottom: 45px;
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  &__item:nth-child(1) {
+    min-width: 700px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    position: relative;
+    .promo__item-title {
+      position: absolute;
+      top: 45px;
+      color: vars.$color-bg;
+      right: 20px;
+      font-size: 36px;
+      @extend %museo-900;
+      max-width: 412px;
+      span {
+        color: vars.$color-accent;
+      }
+    }
+  }
+  &__item:nth-child(2) {
+    min-width: 335px;
+    position: relative;
+    .promo__item-title {
+      position: absolute;
+      top: 45px;
+      left: 25px;
+      color: #fff;
+      font-size: 36px;
+      @extend %museo-900;
+      max-width: 412px;
+    }
+  }
+  &__item:nth-child(3) {
+    min-width: 335px;
+    position: relative;
+    .promo__item-title {
+      position: absolute;
+      bottom: 45px;
+      left: 25px;
+      color: #fff;
+      font-size: 36px;
+      @extend %museo-900;
+      max-width: 412px;
+    }
+  }
+  &__item:nth-child(4) {
+    min-width: 335px;
+    position: relative;
+    .promo__item-title {
+      position: absolute;
+      bottom: 45px;
+      left: 25px;
+      color: #fff;
+      font-size: 36px;
+      @extend %museo-900;
+      max-width: 412px;
+    }
+  }
+  &__item:nth-child(5) {
+    min-width: 335px;
+    position: relative;
+    .promo__item-title {
+      position: absolute;
+      bottom: 45px;
+      left: 25px;
+      color: vars.$color-accent;
+      font-size: 36px;
+      @extend %museo-900;
+      max-width: 290px;
+    }
+  }
+}
