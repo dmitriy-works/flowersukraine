@@ -32,3 +32,9 @@ $color-text-muted: #bdbdbd;
   font-family: "Euclid-SemiBold", sans-serif;
   font-weight: 600;
 }
+.title {
+  font-size: 48px;
+  text-align: center;
+  @extend %museo-900;
+  color: #333333;
+}

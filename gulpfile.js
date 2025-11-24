@@ -63,6 +63,7 @@ function scripts() {
   return src([
     'node_modules/swiper/swiper-bundle.js',
     'node_modules/nouislider/dist/nouislider.js',
+    'node_modules/rateyo/src/jquery.rateyo.js',
     'app/js/main.js',
   ])
   .pipe(concat('main.min.js'))

@@ -23,10 +23,11 @@
     "gulp-ttf2woff2": "^4.0.1",
     "gulp-uglify-es": "^3.0.0",
     "gulp-webp": "^4.0.1",
+    "rateyo": "^2.3.2",
     "sass": "^1.87.0"
   },
   "dependencies": {
     "nouislider": "^15.8.1",
-    "swiper": "^11.2.8"
+    "swiper": "^11.2.10"
   }
 }
