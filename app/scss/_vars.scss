@@ -4,32 +4,32 @@ $color-primary: #828282;
 $color-text-muted: #bdbdbd;
 
 %museo-100 {
-  font-family: "MuseoSansCyrl-Thin", sans-serif;
+  font-family: 'MuseoSansCyrl-Thin', sans-serif;
   font-weight: 100;
 }
 
 %museo-300 {
-  font-family: "MuseoSansCyrl-Regular", sans-serif;
+  font-family: 'MuseoSansCyrl-Regular', sans-serif;
   font-weight: 300;
 }
 
 %museo-900 {
-  font-family: "MuseoSansCyrl-Bold", sans-serif;
+  font-family: 'MuseoSansCyrl-Bold', sans-serif;
   font-weight: 900;
 }
 
-%Euclid-400 {
-  font-family: "Euclid-Regular", sans-serif;
+%euclid-400 {
+  font-family: 'EuclidCircularB-Regular', sans-serif;
   font-weight: 400;
 }
 
-%Euclid-500 {
-  font-family: "Euclid-Medium", sans-serif;
+%euclid-500 {
+  font-family: 'Euclid-Medium', sans-serif;
   font-weight: 500;
 }
 
-%Euclid-600 {
-  font-family: "Euclid-SemiBold", sans-serif;
+%euclid-600 {
+  font-family: 'Euclid-SemiBold', sans-serif;
   font-weight: 600;
 }
 .title {
@@ -37,4 +37,24 @@ $color-text-muted: #bdbdbd;
   text-align: center;
   @extend %museo-900;
   color: #333333;
+}
+.section__title {
+  font-size: 48px;
+  color: #333333;
+  @extend %museo-900;
+  text-align: center;
+  padding-bottom: 100px;
+}
+%btn-order {
+  width: 220px;
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  padding: 22px 42px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 35px;
+  background-color: #bc314d;
 }

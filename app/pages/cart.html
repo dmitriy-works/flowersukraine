@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flowers-Ukraine</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="header__top-inner">
+            <div class="header__top-selects">
+              <div class="header__top-select">
+                <p class="header__top-select__title">Валюта</p>
+                <p class="header__top-select__text">Грн</p>
+                <ul class="header__top-selectcurrent__list">
+                  <li class="header__top-selectcurrent__item">
+                    Российский рубль
+                    <span class="header__top-lang">RU</span>
+                  </li>
+                  <li
+                    class="header__top-selectcurrent__item header__top-lang--active"
+                  >
+                    Доллар США
+                    <span class="header__top-lang">USD</span>
+                  </li>
+                  <li class="header__top-selectcurrent__item">
+                    Українська гривня
+                    <span class="header__top-lang">UAH</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="header__top-select">
+                <p class="header__top-select__title">Язык</p>
+                <p class="header__top-select__text header__top-select__current">
+                  RU
+                </p>
+                <ul class="header__top-selectcurrent__list">
+                  <li class="header__top-selectcurrent__item">
+                    Русский
+                    <span class="header__top-lang">RU</span>
+                  </li>
+                  <li
+                    class="header__top-selectcurrent__item header__top-lang--active"
+                  >
+                    English
+                    <span class="header__top-lang">EN</span>
+                  </li>
+                  <li class="header__top-selectcurrent__item">
+                    Українська
+                    <span class="header__top-lang">UA</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="header__top-select">
+                <p class="header__top-select__title">Город</p>
+                <p class="header__top-select__text">Киев</p>
+                <ul class="header__top-selectcurrent__list">
+                  <li class="header__top-selectcurrent__item">Житомир</li>
+                  <li class="header__top-selectcurrent__item">Львов</li>
+                  <li class="header__top-selectcurrent__item">Умань</li>
+                  <li class="header__top-selectcurrent__item">Чернигов</li>
+                  <li class="header__top-selectcurrent__item">Харьков</li>
+                  <li
+                    class="header__top-selectcurrent__item header__top-lang--active"
+                  >
+                    Краматорск
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <ul class="header__top-list">
+              <li class="header__top-item">
+                <svg class="header__top-itemicon" width="18" height="16">
+                  <use xlink:href="images/sprite.svg#heart-icon"></use>
+                </svg>
+                <span class="header__top-linknumber">2</span>
+                <a class="header__top-link header__top-linkbookmarks" href="#"
+                  >Закладки</a
+                >
+              </li>
+              <li class="header__top-item">
+                <svg class="header__top-itemicon" width="22" height="16">
+                  <use xlink:href="images/sprite.svg#car-icon"></use>
+                </svg>
+                <a class="header__top-link header__top-linkdelivery" href="#"
+                  >Доставка и оплата</a
+                >
+              </li>
+              <li class="header__top-item">
+                <svg class="header__top-itemicon" width="17" height="17">
+                  <use xlink:href="images/sprite.svg#phone-icon"></use>
+                </svg>
+                <a class="header__top-link" href="#">Контакты</a>
+              </li>
+            </ul>
+            <div class="header__top-login">
+              <svg class="header__top-loginicon" width="18" height="16">
+                <use xlink:href="images/sprite.svg#user-icon"></use>
+              </svg>
+              <a class="header__top-btn header__top-btnenter" href="#">Вход</a>
+              <a class="header__top-btn" href="#">Регистрация</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__box">
+        <div class="container">
+          <div class="header__box-inner">
+            <a class="header__logo" href="#">
+              <img src="images/header-logo.svg" alt="Logo" />
+            </a>
+            <div class="header__box-wrapper">
+              <form class="header__form">
+                <button class="header__form-btn header__category-btn">
+                  <svg width="10" height="5">
+                    <use
+                      xlink:href="images/sprite.svg#arrow-down-category"
+                    ></use>
+                  </svg>
+                </button>
+                <input
+                  class="header__input header__input-category"
+                  type="text"
+                  placeholder="Поиск по категориям"
+                />
+                <input
+                  class="header__input header__input-product"
+                  type="text"
+                  placeholder="Поиск по товарам"
+                />
+                <button class="header__form-btn header__product-btn">
+                  <svg width="19" height="19">
+                    <use
+                      xlink:href="images/sprite.svg#cearch-icon-category"
+                    ></use>
+                  </svg>
+                </button>
+              </form>
+              <nav class="menu">
+                <ul class="header__menu-list">
+                  <li
+                    class="header__menu-item header__menu-itemproduct itemproduct"
+                  >
+                    <a
+                      class="header__menu-link header__menu-linkproduct"
+                      href="#"
+                      >Каталог товаров</a
+                    >
+                    <button class="header__menu-btn linkproduct-btn">
+                      <svg width="10" height="5">
+                        <use
+                          xlink:href="images/sprite.svg#arrow-down-black"
+                        ></use>
+                      </svg>
+                    </button>
+                    <ul class="itemproduct__menu-list">
+                      <li class="itemproduct__menu-item">
+                        <a class="itemproduct__menu-link" href="#">Букеты</a>
+                        <span class="itemproduct__icons">
+                          <svg width="7" height="15">
+                            <use
+                              xlink:href="images/sprite.svg#itemproduct-arrow"
+                            ></use>
+                          </svg>
+                        </span>
+                      </li>
+                      <li class="itemproduct__menu-item">
+                        <a class="itemproduct__menu-link" href="#">Розы</a>
+                        <span class="itemproduct__icons">
+                          <svg width="7" height="15">
+                            <use
+                              xlink:href="images/sprite.svg#itemproduct-arrow"
+                            ></use>
+                          </svg>
+                        </span>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="#">Форум</a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="#">Отзывы</a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="#">Акции</a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="#">Новости</a>
+                  </li>
+                  <li class="header__menu-item header__menu-iteminfo">
+                    <a class="header__menu-link" href="#">Информация</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="header__contacts">
+              <ul class="header__social-list">
+                <li class="header__social-item">
+                  <a class="header__social-link" href="#">
+                    <svg width="27" height="27">
+                      <use xlink:href="images/sprite.svg#watsap-icon"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="header__social-item">
+                  <a class="header__social-link" href="#">
+                    <svg width="28" height="27">
+                      <use xlink:href="images/sprite.svg#telegram-icon"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <a class="header__contacts-phone" href="tel:+380678293030"
+                >+38 (067) 829 30 30</a
+              >
+              <div class="header__actions">
+                <ul class="header__actions-list">
+                  <li class="header__actions-item">
+                    <a class="header__actions-link" href="#">
+                      <span class="header__actionsheart">2</span>
+                      <svg width="33" height="31">
+                        <use
+                          xlink:href="images/sprite.svg#heart-actions-icon"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="header__actions-item">
+                    <a class="header__actions-link" href="#">
+                      <span class="header__actionscart">1</span>
+                      <svg width="33" height="31">
+                        <use
+                          xlink:href="images/sprite.svg#cart-actions-icon"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <span class="header__actions-price">₴ 1 520</span>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="wrapper">
+      <main class="main">
+        <section class="cart-page">
+          <div class="container">
+            <div class="breadcrumbs">
+              <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link" href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs__item breadcrumbs__item--active">
+                  <a class="breadcrumbs__link" href="#">Корзина</a>
+                </li>
+              </ul>
+            </div>
+            <h2 class="cart-page__title title">Корзина</h2>
+            <div class="cart-page__top">
+              <ul class="cart-page__list">
+                <li class="cart-page__list-item">Название</li>
+                <li class="cart-page__list-item">Цена за шт.</li>
+                <li class="cart-page__list-item">Кол-во</li>
+                <li class="cart-page__list-item">Итог</li>
+                <li class="cart-page__list-item cart-page__list-itemlink">
+                  <a class="cart-page__list-link" href="#"
+                    >Продолжить покупки</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="product__wrapper">
+              <article class="product-cart">
+                <div class="product-cart__item">
+                  <div class="product-cart__inner">
+                    <div class="product-cart__image">
+                      <img src="images/cart-1.png" alt="Букет Аромат любви" />
+                    </div>
+                    <h3 class="product-cart__title">25 желтых тюльпанов</h3>
+                    <div class="product-cart__prise">
+                      <div class="product-cart__prisenew">795 ₴</div>
+                      <div class="product-cart__priseold">995 ₴</div>
+                    </div>
+                    <input
+                      class="product-item__num product-cart__num"
+                      type="number"
+                      value="2"
+                      min="1"
+                    />
+                    <div class="product-cart__total">1590 ₴</div>
+                    <div class="product-cart__icons">
+                      <a class="product-cart__basket" href="#">
+                        <svg width="14" height="18">
+                          <use xlink:href="images/sprite.svg#cart-basket"></use>
+                        </svg>
+                      </a>
+                      <a class="product-cart__favorite" href="#">
+                        <svg width="21" height="19">
+                          <use
+                            xlink:href="images/sprite.svg#cart-favorite"
+                          ></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product-cart__item">
+                  <div class="product-cart__inner">
+                    <div class="product-cart__image">
+                      <img src="images/cart-2.png" alt="Букет Аромат любви" />
+                    </div>
+                    <h3 class="product-cart__title">
+                      25 розовых пионовидных роз
+                    </h3>
+                    <div class="product-cart__prise">
+                      <div class="product-cart__prisenew">1680 ₴</div>
+                    </div>
+                    <input
+                      class="product-item__num product-cart__num"
+                      type="number"
+                      value="1"
+                      min="1"
+                    />
+                    <div class="product-cart__total">1680 ₴</div>
+                    <div class="product-cart__icons">
+                      <a class="product-cart__basket" href="#">
+                        <svg width="14" height="18">
+                          <use xlink:href="images/sprite.svg#cart-basket"></use>
+                        </svg>
+                      </a>
+                      <a class="product-cart__favorite" href="#">
+                        <svg width="21" height="19">
+                          <use
+                            xlink:href="images/sprite.svg#cart-favorite"
+                          ></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product-cart__item">
+                  <div class="product-cart__inner">
+                    <div class="product-cart__image">
+                      <img src="images/cart-3.png" alt="Букет Аромат любви" />
+                    </div>
+                    <h3 class="product-cart__title">Мечтательница</h3>
+                    <div class="product-cart__prise">
+                      <div class="product-cart__prisenew">2288 ₴</div>
+                    </div>
+                    <input
+                      class="product-item__num product-cart__num"
+                      type="number"
+                      value="1"
+                      min="1"
+                    />
+                    <div class="product-cart__total">2288 ₴</div>
+                    <div class="product-cart__icons">
+                      <a class="product-cart__basket" href="#">
+                        <svg width="14" height="18">
+                          <use xlink:href="images/sprite.svg#cart-basket"></use>
+                        </svg>
+                      </a>
+                      <a class="product-cart__favorite" href="#">
+                        <svg width="21" height="19">
+                          <use
+                            xlink:href="images/sprite.svg#cart-favorite"
+                          ></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product-cart__item">
+                  <div class="product-cart__inner">
+                    <div class="product-cart__image">
+                      <img src="images/cart-4.png" alt="Букет Аромат любви" />
+                    </div>
+                    <h3 class="product-cart__title">Синие тюльпаны</h3>
+                    <div class="product-cart__prise">
+                      <div class="product-cart__prisenew">2100 ₴</div>
+                    </div>
+                    <input
+                      class="product-item__num product-cart__num"
+                      type="number"
+                      value="1"
+                      min="1"
+                    />
+                    <div class="product-cart__total">2100</div>
+                    <div class="product-cart__icons">
+                      <a class="product-cart__basket" href="#">
+                        <svg width="14" height="18">
+                          <use xlink:href="images/sprite.svg#cart-basket"></use>
+                        </svg>
+                      </a>
+                      <a class="product-cart__favorite" href="#">
+                        <svg width="21" height="19">
+                          <use
+                            xlink:href="images/sprite.svg#cart-favorite"
+                          ></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <div class="product-order">
+                <div class="product-order__content">
+                  <h3 class="product-order__content-title">Ваш заказ</h3>
+                  <ul class="product-order__list">
+                    <li class="product-order__item">
+                      <div class="product-order__title">Товары</div>
+                      <div class="product-order__text">5 558 ₴</div>
+                    </li>
+                    <li class="product-order__item">
+                      <div class="product-order__title">Скидка</div>
+                      <div class="product-order__text">254 ₴</div>
+                    </li>
+                    <li class="product-order__item">
+                      <div class="product-order__title">Всего</div>
+                      <div class="product-order__text">5 304 ₴</div>
+                    </li>
+                  </ul>
+                  <a class="product-order__link" href="#">Оформить заказ</a>
+                </div>
+              </div>
+            </div>
+            <div class="cart-slider">
+              <h2 class="cart-slider__title title">Рекомендации</h2>
+              <div class="swiper stock__swiper products__swiper">
+                <div class="swiper-wrapper products__swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="stock__item">
+                      <a class="stock__item-images" href="#">
+                        <img
+                          class="stock__item-img"
+                          src="images/stock-1.png"
+                          alt="stock image"
+                        />
+                      </a>
+                      <div class="stock__rating" data-rateyo-rating="5"></div>
+                      <div class="stock__item-sale">-19%</div>
+                      <button class="stock__item-heart active" type="submit">
+                        <svg width="33" height="30">
+                          <use
+                            xlink:href="images/sprite.svg#stock__heart"
+                          ></use>
+                        </svg>
+                      </button>
+                      <div class="stock__item-top">top</div>
+                      <div class="stock__item-content">
+                        <div class="stock__item-box">
+                          <p class="stock__item-text">101 красная роза</p>
+                          <div class="stock__item-price">
+                            <a class="stock__item-priceold" href="#"
+                              >2400 грн</a
+                            >
+                            <a class="stock__item-pricenew" href="#"
+                              >2260 грн</a
+                            >
+                          </div>
+                        </div>
+                        <button class="stock__item-order" type="submit">
+                          Заказать
+                        </button>
+                        <a class="stock__item-link" href="#">Быстрый заказ</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="stock__item">
+                      <a class="stock__item-images" href="#">
+                        <img
+                          class="stock__item-img"
+                          src="images/stock-2.png"
+                          alt="stock image"
+                        />
+                      </a>
+                      <div class="stock__rating" data-rateyo-rating="5"></div>
+                      <div class="stock__item-sale">-10%</div>
+                      <button class="stock__item-heart" type="submit">
+                        <svg width="33" height="30">
+                          <use
+                            xlink:href="images/sprite.svg#stock__heart"
+                          ></use>
+                        </svg>
+                      </button>
+                      <div class="stock__item-top">top</div>
+                      <div class="stock__item-content">
+                        <div class="stock__item-box">
+                          <p class="stock__item-text">
+                            25 розовых пионовидных роз
+                          </p>
+                          <div class="stock__item-price">
+                            <a class="stock__item-priceold" href="#"
+                              >2400 грн</a
+                            >
+                            <a class="stock__item-pricenew" href="#"
+                              >1680 грн</a
+                            >
+                          </div>
+                        </div>
+                        <button class="stock__item-order" type="submit">
+                          Заказать
+                        </button>
+                        <a class="stock__item-link" href="#">Быстрый заказ</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="stock__item">
+                      <a class="stock__item-images" href="#">
+                        <img
+                          class="stock__item-img"
+                          src="images/stock-3.png"
+                          alt="stock image"
+                        />
+                      </a>
+                      <div class="stock__rating" data-rateyo-rating="5"></div>
+                      <div class="stock__item-sale">-10%</div>
+                      <button class="stock__item-heart active" type="submit">
+                        <svg width="33" height="30">
+                          <use
+                            xlink:href="images/sprite.svg#stock__heart"
+                          ></use>
+                        </svg>
+                      </button>
+                      <div class="stock__item-top">top</div>
+                      <div class="stock__item-content">
+                        <div class="stock__item-box">
+                          <p class="stock__item-text">Влюбленность</p>
+                          <div class="stock__item-price">
+                            <a class="stock__item-priceold" href="#"
+                              >2460 грн</a
+                            >
+                            <a class="stock__item-pricenew" href="#"
+                              >1270 грн</a
+                            >
+                          </div>
+                        </div>
+                        <button class="stock__item-order" type="submit">
+                          Заказать
+                        </button>
+                        <a class="stock__item-link" href="#">Быстрый заказ</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="stock__item">
+                      <a class="stock__item-images" href="#">
+                        <img
+                          class="stock__item-img"
+                          src="images/stock-4.png"
+                          alt="stock image"
+                        />
+                      </a>
+                      <div class="stock__rating" data-rateyo-rating="4"></div>
+                      <div class="stock__item-sale">-10%</div>
+                      <button class="stock__item-heart" type="submit">
+                        <svg width="33" height="30">
+                          <use
+                            xlink:href="images/sprite.svg#stock__heart"
+                          ></use>
+                        </svg>
+                      </button>
+                      <div class="stock__item-top">top</div>
+                      <div class="stock__item-content">
+                        <div class="stock__item-box">
+                          <p class="stock__item-text">Корзина все для тебя</p>
+                          <div class="stock__item-price">
+                            <a class="stock__item-priceold" href="#"
+                              >2130 грн</a
+                            >
+                            <a class="stock__item-pricenew" href="#"
+                              >2020 грн</a
+                            >
+                          </div>
+                        </div>
+                        <button class="stock__item-order" type="submit">
+                          Заказать
+                        </button>
+                        <a class="stock__item-link" href="#">Быстрый заказ</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="stock__item">
+                      <a class="stock__item-images" href="#">
+                        <img
+                          class="stock__item-img"
+                          src="images/stock-5.png"
+                          alt="stock image"
+                        />
+                      </a>
+                      <div class="stock__rating" data-rateyo-rating="5"></div>
+                      <div class="stock__item-sale">-10%</div>
+                      <button class="stock__item-heart" type="submit">
+                        <svg width="33" height="30">
+                          <use
+                            xlink:href="images/sprite.svg#stock__heart"
+                          ></use>
+                        </svg>
+                      </button>
+                      <div class="stock__item-top">top</div>
+                      <div class="stock__item-content">
+                        <div class="stock__item-box">
+                          <p class="stock__item-text">Роскошный букет</p>
+                          <div class="stock__item-price">
+                            <a class="stock__item-priceold" href="#"
+                              >2030 грн</a
+                            >
+                            <a class="stock__item-pricenew" href="#"
+                              >1920 грн</a
+                            >
+                          </div>
+                        </div>
+                        <button class="stock__item-order" type="submit">
+                          Заказать
+                        </button>
+                        <a class="stock__item-link" href="#">Быстрый заказ</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="stock__item">
+                      <a class="stock__item-images" href="#">
+                        <img
+                          class="stock__item-img"
+                          src="images/stock-6.png"
+                          alt="stock image"
+                        />
+                      </a>
+                      <div class="stock__rating" data-rateyo-rating="5"></div>
+                      <div class="stock__item-sale">-15%</div>
+                      <button class="stock__item-heart" type="submit">
+                        <svg width="33" height="30">
+                          <use
+                            xlink:href="images/sprite.svg#stock__heart"
+                          ></use>
+                        </svg>
+                      </button>
+                      <div class="stock__item-top">top</div>
+                      <div class="stock__item-content">
+                        <div class="stock__item-box">
+                          <p class="stock__item-text">Праздничный букет</p>
+                          <div class="stock__item-price">
+                            <a class="stock__item-priceold" href="#"
+                              >2170 грн</a
+                            >
+                            <a class="stock__item-pricenew" href="#"
+                              >2030 грн</a
+                            >
+                          </div>
+                        </div>
+                        <button class="stock__item-order" type="submit">
+                          Заказать
+                        </button>
+                        <a class="stock__item-link" href="#">Быстрый заказ</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="stock__item">
+                      <a class="stock__item-images" href="#">
+                        <img
+                          class="stock__item-img"
+                          src="images/stock-7.png"
+                          alt="stock image"
+                        />
+                      </a>
+                      <div class="stock__rating" data-rateyo-rating="3.8"></div>
+                      <div class="stock__item-sale">-12%</div>
+                      <button class="stock__item-heart" type="submit">
+                        <svg width="33" height="30">
+                          <use
+                            xlink:href="images/sprite.svg#stock__heart"
+                          ></use>
+                        </svg>
+                      </button>
+                      <div class="stock__item-top">top</div>
+                      <div class="stock__item-content">
+                        <div class="stock__item-box">
+                          <p class="stock__item-text">Букет роз</p>
+                          <div class="stock__item-price">
+                            <a class="stock__item-priceold" href="#"
+                              >2535 грн</a
+                            >
+                            <a class="stock__item-pricenew" href="#"
+                              >2370 грн</a
+                            >
+                          </div>
+                        </div>
+                        <button class="stock__item-order" type="submit">
+                          Заказать
+                        </button>
+                        <a class="stock__item-link" href="#">Быстрый заказ</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="stock__item">
+                      <a class="stock__item-images" href="#">
+                        <img
+                          class="stock__item-img"
+                          src="images/stock-8.png"
+                          alt="stock image"
+                        />
+                      </a>
+                      <div class="stock__rating" data-rateyo-rating="5"></div>
+                      <div class="stock__item-sale">-15%</div>
+                      <button class="stock__item-heart" type="submit">
+                        <svg width="33" height="30">
+                          <use
+                            xlink:href="images/sprite.svg#stock__heart"
+                          ></use>
+                        </svg>
+                      </button>
+                      <div class="stock__item-top">top</div>
+                      <div class="stock__item-content">
+                        <div class="stock__item-box">
+                          <p class="stock__item-text">Роскошный букет</p>
+                          <div class="stock__item-price">
+                            <a class="stock__item-priceold" href="#"
+                              >2030 грн</a
+                            >
+                            <a class="stock__item-pricenew" href="#"
+                              >1920 грн</a
+                            >
+                          </div>
+                        </div>
+                        <button class="stock__item-order" type="submit">
+                          Заказать
+                        </button>
+                        <a class="stock__item-link" href="#">Быстрый заказ</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="stock__item">
+                      <a class="stock__item-images" href="#">
+                        <img
+                          class="stock__item-img"
+                          src="images/stock-12.png"
+                          alt="stock image"
+                        />
+                      </a>
+                      <div class="stock__rating" data-rateyo-rating="5"></div>
+                      <div class="stock__item-sale">-5%</div>
+                      <button class="stock__item-heart" type="submit">
+                        <svg width="33" height="30">
+                          <use
+                            xlink:href="images/sprite.svg#stock__heart"
+                          ></use>
+                        </svg>
+                      </button>
+                      <div class="stock__item-top">top</div>
+                      <div class="stock__item-content">
+                        <div class="stock__item-box">
+                          <p class="stock__item-text">Мечта в цветах</p>
+                          <div class="stock__item-price">
+                            <a class="stock__item-priceold" href="#"
+                              >1800 грн</a
+                            >
+                            <a class="stock__item-pricenew" href="#"
+                              >1720 грн</a
+                            >
+                          </div>
+                        </div>
+                        <button class="stock__item-order" type="submit">
+                          Заказать
+                        </button>
+                        <a class="stock__item-link" href="#">Быстрый заказ</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="stock__item">
+                      <a class="stock__item-images" href="#">
+                        <img
+                          class="stock__item-img"
+                          src="images/stock-5.png"
+                          alt="stock image"
+                        />
+                      </a>
+                      <div class="stock__rating" data-rateyo-rating="5"></div>
+                      <div class="stock__item-sale">-10%</div>
+                      <button class="stock__item-heart" type="submit">
+                        <svg width="33" height="30">
+                          <use
+                            xlink:href="images/sprite.svg#stock__heart"
+                          ></use>
+                        </svg>
+                      </button>
+                      <div class="stock__item-top">top</div>
+                      <div class="stock__item-content">
+                        <div class="stock__item-box">
+                          <p class="stock__item-text">Роскошный букет</p>
+                          <div class="stock__item-price">
+                            <a class="stock__item-priceold" href="#"
+                              >2030 грн</a
+                            >
+                            <a class="stock__item-pricenew" href="#"
+                              >1920 грн</a
+                            >
+                          </div>
+                        </div>
+                        <button class="stock__item-order" type="submit">
+                          Заказать
+                        </button>
+                        <a class="stock__item-link" href="#">Быстрый заказ</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="stock__item">
+                      <a class="stock__item-images" href="#">
+                        <img
+                          class="stock__item-img"
+                          src="images/stock-9.png"
+                          alt="stock image"
+                        />
+                      </a>
+                      <div class="stock__rating" data-rateyo-rating="5"></div>
+                      <div class="stock__item-sale">-10%</div>
+                      <button class="stock__item-heart" type="submit">
+                        <svg width="33" height="30">
+                          <use
+                            xlink:href="images/sprite.svg#stock__heart"
+                          ></use>
+                        </svg>
+                      </button>
+                      <div class="stock__item-content">
+                        <div class="stock__item-box">
+                          <p class="stock__item-text">Сердце весны</p>
+                          <div class="stock__item-price">
+                            <a class="stock__item-priceold" href="#"
+                              >1950 грн</a
+                            >
+                            <a class="stock__item-pricenew" href="#"
+                              >1820 грн</a
+                            >
+                          </div>
+                        </div>
+                        <button class="stock__item-order" type="submit">
+                          Заказать
+                        </button>
+                        <a class="stock__item-link" href="#">Быстрый заказ</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="stock__item">
+                      <a class="stock__item-images" href="#">
+                        <img
+                          class="stock__item-img"
+                          src="images/stock-11.png"
+                          alt="stock image"
+                        />
+                      </a>
+                      <div class="stock__rating" data-rateyo-rating="5"></div>
+                      <div class="stock__item-sale">-5%</div>
+                      <button class="stock__item-heart" type="submit">
+                        <svg width="33" height="30">
+                          <use
+                            xlink:href="images/sprite.svg#stock__heart"
+                          ></use>
+                        </svg>
+                      </button>
+                      <div class="stock__item-top">top</div>
+                      <div class="stock__item-content">
+                        <div class="stock__item-box">
+                          <p class="stock__item-text">Аромат любви</p>
+                          <div class="stock__item-price">
+                            <a class="stock__item-priceold" href="#"
+                              >2325 грн</a
+                            >
+                            <a class="stock__item-pricenew" href="#"
+                              >2020 грн</a
+                            >
+                          </div>
+                        </div>
+                        <button class="stock__item-order" type="submit">
+                          Заказать
+                        </button>
+                        <a class="stock__item-link" href="#">Быстрый заказ</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="stock__item">
+                      <a class="stock__item-images" href="#">
+                        <img
+                          class="stock__item-img"
+                          src="images/stock-10.png"
+                          alt="stock image"
+                        />
+                      </a>
+                      <div class="stock__rating" data-rateyo-rating="3"></div>
+                      <div class="stock__item-sale">-10%</div>
+                      <button class="stock__item-heart" type="submit">
+                        <svg width="33" height="30">
+                          <use
+                            xlink:href="images/sprite.svg#stock__heart"
+                          ></use>
+                        </svg>
+                      </button>
+                      <div class="stock__item-top">top</div>
+                      <div class="stock__item-content">
+                        <div class="stock__item-box">
+                          <p class="stock__item-text">Розовые тюльпаны</p>
+                          <div class="stock__item-price">
+                            <a class="stock__item-priceold" href="#"
+                              >2030 грн</a
+                            >
+                            <a class="stock__item-pricenew" href="#"
+                              >1920 грн</a
+                            >
+                          </div>
+                        </div>
+                        <button class="stock__item-order" type="submit">
+                          Заказать
+                        </button>
+                        <a class="stock__item-link" href="#">Быстрый заказ</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="stock__item">
+                      <a class="stock__item-images" href="#">
+                        <img
+                          class="stock__item-img"
+                          src="images/stock-7.png"
+                          alt="stock image"
+                        />
+                      </a>
+                      <div class="stock__rating" data-rateyo-rating="5"></div>
+                      <div class="stock__item-sale">-10%</div>
+                      <button class="stock__item-heart" type="submit">
+                        <svg width="33" height="30">
+                          <use
+                            xlink:href="images/sprite.svg#stock__heart"
+                          ></use>
+                        </svg>
+                      </button>
+                      <div class="stock__item-top">top</div>
+                      <div class="stock__item-content">
+                        <div class="stock__item-box">
+                          <p class="stock__item-text">Роскошный букет</p>
+                          <div class="stock__item-price">
+                            <a class="stock__item-priceold" href="#"
+                              >2030 грн</a
+                            >
+                            <a class="stock__item-pricenew" href="#"
+                              >1920 грн</a
+                            >
+                          </div>
+                        </div>
+                        <button class="stock__item-order" type="submit">
+                          Заказать
+                        </button>
+                        <a class="stock__item-link" href="#">Быстрый заказ</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="stock-button-prev stock__arrows-prev">
+                  <img
+                    class="stock-arrow-prev"
+                    src="images/stock-prev.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="stock-button-next stock__arrows-next">
+                  <img
+                    class="stock-arrow-next"
+                    src="images/stock-next.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__top-inner">
+            <div class="footer__top-item footer__top-itemlogo">
+              <a class="footer__top-logo" href="#">
+                <img src="images/footer-logo.svg" alt="footer logo" />
+              </a>
+            </div>
+
+            <div class="footer__top-item">
+              <h4 class="footer__top-title">ИНФОРМАЦИЯ</h4>
+              <ul class="footer__top-list">
+                <li class="footer__top-listitem">
+                  <a class="footer__top-listlink" href="#">О НАС</a>
+                </li>
+                <li class="footer__top-listitem">
+                  <a class="footer__top-listlink" href="#">ДОСТАВКА И ОПЛАТА</a>
+                </li>
+                <li class="footer__top-listitem">
+                  <a class="footer__top-listlink" href="#"
+                    >ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer__top-item">
+              <h4 class="footer__top-title">СЛУЖБА ПОДДЕРЖКИ</h4>
+              <ul class="footer__top-list">
+                <li class="footer__top-listitem">
+                  <a class="footer__top-listlink" href="#">КАРТА САЙТА</a>
+                </li>
+                <li class="footer__top-listitem">
+                  <a class="footer__top-listlink" href="#">ВОЗВРАТ ТОВАРА</a>
+                </li>
+                <li class="footer__top-listitem">
+                  <a class="footer__top-listlink" href="#">СВЯЗАТЬСЯ С НАМИ</a>
+                </li>
+                <li class="footer__top-listitem">
+                  <a class="footer__top-listlink" href="#"
+                    >ДЛЯ СОТРУДНИЧЕСТВА</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer__top-item">
+              <h4 class="footer__top-title">ЛИЧНЫЙ КАБИНЕТ</h4>
+              <ul class="footer__top-list">
+                <li class="footer__top-listitem">
+                  <a class="footer__top-listlink" href="#">ЛИЧНЫЙ КАБИНЕТ</a>
+                </li>
+                <li class="footer__top-listitem">
+                  <a class="footer__top-listlink" href="#">ИСТОРИЯ ЗАКАЗА</a>
+                </li>
+                <li class="footer__top-listitem">
+                  <a class="footer__top-listlink" href="#">ЗАКЛАДКИ</a>
+                </li>
+                <li class="footer__top-listitem">
+                  <a class="footer__top-listlink" href="#">СПИСОК НОВОСТЕЙ</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer__top-item">
+              <h4 class="footer__top-title">ДОПОЛНИТЕЛЬНО</h4>
+              <ul class="footer__top-list">
+                <li class="footer__top-listitem">
+                  <a class="footer__top-listlink" href="#">ПОДАРОЧНЫЕ</a>
+                </li>
+                <li class="footer__top-listitem">
+                  <a class="footer__top-listlink" href="#">СЕРТИФИКАТЫ</a>
+                </li>
+                <li class="footer__top-listitem">
+                  <a class="footer__top-listlink" href="#">АКЦИИ</a>
+                </li>
+                <li class="footer__top-listitem">
+                  <a class="footer__top-listlink" href="#">ЦВЕТЫ В ОФИС</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="footer__bottom-inner">
+            <p class="footer__bottom-text">
+              Copyright © 2021. Все права защищены
+            </p>
+
+            <ul class="footer__bottom-list">
+              <li class="footer__bottom-item">Способы оплаты:</li>
+              <li class="footer__bottom-item">
+                <a class="footer__bottom-link" href="#">
+                  <img src="images/partners-1.svg" alt="partners-icon" />
+                </a>
+              </li>
+              <li class="footer__bottom-item">
+                <a class="footer__bottom-link" href="#">
+                  <img src="images/partners-2.svg" alt="partners-icon" />
+                </a>
+              </li>
+              <li class="footer__bottom-item">
+                <a class="footer__bottom-link" href="#">
+                  <img src="images/partners-3.svg" alt="partners-icon" />
+                </a>
+              </li>
+              <li class="footer__bottom-item">
+                <a class="footer__bottom-link" href="#">
+                  <img src="images/partners-4.svg" alt="partners-icon" />
+                </a>
+              </li>
+              <li class="footer__bottom-item">
+                <a class="footer__bottom-link" href="#">
+                  <img src="images/partners-5.svg" alt="partners-icon" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

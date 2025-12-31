@@ -17,3 +17,18 @@ body {
   padding: 0 15px;
   margin: 0 auto;
 }
+
+.breadcrumbs {
+  &__list {
+    display: flex;
+    gap: 26px;
+  }
+  &__item {
+    font-family: "EuclidCircularB-Regular", sans-serif;
+    font-weight: 400;
+    text-decoration: underline;
+    &--active {
+      text-decoration: none;
+    }
+  }
+}
