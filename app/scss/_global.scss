@@ -17,6 +17,12 @@ body {
   padding: 0 15px;
   margin: 0 auto;
 }
+.container-small {
+  max-width: 1415px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
 
 .breadcrumbs {
   &__list {
@@ -26,9 +32,10 @@ body {
   &__item {
     font-family: "EuclidCircularB-Regular", sans-serif;
     font-weight: 400;
-    text-decoration: underline;
-    &--active {
-      text-decoration: none;
+    line-height: 22px;
+    border-bottom: 1px solid #828282;
+    &:last-child {
+      border-bottom: none;
     }
   }
 }
