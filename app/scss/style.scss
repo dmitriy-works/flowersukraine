@@ -2226,3 +2226,48 @@ body {
     padding-bottom: 35px;
   }
 }
+.page-delivery {
+  &__content {
+    font-size: 16px;
+    line-height: 30px;
+    padding-bottom: 60px;
+  }
+  &__content-text p {
+    padding-bottom: 35px;
+  }
+  &__content-title {
+    @extend%museo-900;
+    color: vars.$color-accent;
+    padding-bottom: 35px;
+  }
+  &__list {
+    padding-bottom: 35px;
+  }
+  &__item {
+    padding-left: 35px;
+    padding-bottom: 10px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: 0;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: vars.$color-accent;
+    }
+  }
+  &__contacts-item {
+    padding-bottom: 30px;
+  }
+  &__contacts-itembox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  &__contacts-title {
+    @extend%museo-900;
+    color: vars.$color-bg;
+  }
+}
