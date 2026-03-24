@@ -1,0 +1,547 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flowers-Ukraine</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="header__top-inner">
+            <div class="header__top-selects">
+              <div class="header__top-select">
+                <p class="header__top-select__title">Валюта</p>
+                <p class="header__top-select__text">Грн</p>
+                <ul class="header__top-selectcurrent__list">
+                  <li class="header__top-selectcurrent__item">
+                    Российский рубль
+                    <span class="header__top-lang">RU</span>
+                  </li>
+                  <li class="header__top-selectcurrent__item header__top-lang--active">
+                    Доллар США
+                    <span class="header__top-lang">USD</span>
+                  </li>
+                  <li class="header__top-selectcurrent__item">
+                    Українська гривня
+                    <span class="header__top-lang">UAH</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="header__top-select">
+                <p class="header__top-select__title">Язык</p>
+                <p class="header__top-select__text header__top-select__current">RU</p>
+                <ul class="header__top-selectcurrent__list">
+                  <li class="header__top-selectcurrent__item">
+                    Русский
+                    <span class="header__top-lang">RU</span>
+                  </li>
+                  <li class="header__top-selectcurrent__item header__top-lang--active">
+                    English
+                    <span class="header__top-lang">EN</span>
+                  </li>
+                  <li class="header__top-selectcurrent__item">
+                    Українська
+                    <span class="header__top-lang">UA</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="header__top-select">
+                <p class="header__top-select__title">Город</p>
+                <p class="header__top-select__text">Киев</p>
+                <ul class="header__top-selectcurrent__list">
+                  <li class="header__top-selectcurrent__item">Житомир</li>
+                  <li class="header__top-selectcurrent__item">Львов</li>
+                  <li class="header__top-selectcurrent__item">Умань</li>
+                  <li class="header__top-selectcurrent__item">Чернигов</li>
+                  <li class="header__top-selectcurrent__item">Харьков</li>
+                  <li class="header__top-selectcurrent__item header__top-lang--active">Краматорск</li>
+                </ul>
+              </div>
+            </div>
+            <ul class="header__top-list">
+              <li class="header__top-item">
+                <svg class="header__top-itemicon" width="18" height="16">
+                  <use xlink:href="images/sprite.svg#heart-icon"></use>
+                </svg>
+                <span class="header__top-linknumber">2</span>
+                <a class="header__top-link header__top-linkbookmarks" href="#">Закладки</a>
+              </li>
+              <li class="header__top-item">
+                <svg class="header__top-itemicon" width="22" height="16">
+                  <use xlink:href="images/sprite.svg#car-icon"></use>
+                </svg>
+                <a class="header__top-link header__top-linkdelivery" href="#">Доставка и оплата</a>
+              </li>
+              <li class="header__top-item">
+                <svg class="header__top-itemicon" width="17" height="17">
+                  <use xlink:href="images/sprite.svg#phone-icon"></use>
+                </svg>
+                <a class="header__top-link" href="#">Контакты</a>
+              </li>
+            </ul>
+            <div class="header__top-login">
+              <svg class="header__top-loginicon" width="18" height="16">
+                <use xlink:href="images/sprite.svg#user-icon"></use>
+              </svg>
+              <a class="header__top-btn header__top-btnenter" href="#">Вход</a>
+              <a class="header__top-btn" href="#">Регистрация</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__box">
+        <div class="container">
+          <div class="header__box-inner">
+            <a class="header__logo" href="#">
+              <img src="images/header-logo.svg" alt="Logo" />
+            </a>
+            <div class="header__box-wrapper">
+              <form class="header__form">
+                <button class="header__form-btn header__category-btn">
+                  <svg width="10" height="5">
+                    <use xlink:href="images/sprite.svg#arrow-down-category"></use>
+                  </svg>
+                </button>
+                <input class="header__input header__input-category" type="text" placeholder="Поиск по категориям" />
+                <input class="header__input header__input-product" type="text" placeholder="Поиск по товарам" />
+                <button class="header__form-btn header__product-btn">
+                  <svg width="19" height="19">
+                    <use xlink:href="images/sprite.svg#cearch-icon-category"></use>
+                  </svg>
+                </button>
+              </form>
+              <nav class="menu">
+                <ul class="header__menu-list">
+                  <li class="header__menu-item header__menu-itemproduct itemproduct">
+                    <a class="header__menu-link header__menu-linkproduct" href="#">Каталог товаров</a>
+                    <button class="header__menu-btn linkproduct-btn">
+                      <svg width="10" height="5">
+                        <use xlink:href="images/sprite.svg#arrow-down-black"></use>
+                      </svg>
+                    </button>
+                    <ul class="itemproduct__menu-list">
+                      <li class="itemproduct__menu-item">
+                        <a class="itemproduct__menu-link" href="#">Букеты</a>
+                        <span class="itemproduct__icons">
+                          <svg width="7" height="15">
+                            <use xlink:href="images/sprite.svg#itemproduct-arrow"></use>
+                          </svg>
+                        </span>
+                      </li>
+
+                      <li class="itemproduct__menu-item">
+                        <a class="itemproduct__menu-link" href="#">Розы</a>
+                        <span class="itemproduct__icons">
+                          <svg width="7" height="15">
+                            <use xlink:href="images/sprite.svg#itemproduct-arrow"></use>
+                          </svg>
+                        </span>
+                      </li>
+
+                      <li class="itemproduct__menu-item">
+                        <a class="itemproduct__menu-link" href="#">Цветы в коробке</a>
+                        <span class="itemproduct__icons">
+                          <svg width="7" height="15">
+                            <use xlink:href="images/sprite.svg#itemproduct-arrow"></use>
+                          </svg>
+                        </span>
+                      </li>
+
+                      <li class="itemproduct__menu-item">
+                        <a class="itemproduct__menu-link" href="#">Композиции</a>
+                        <span class="itemproduct__icons">
+                          <svg width="7" height="15">
+                            <use xlink:href="images/sprite.svg#itemproduct-arrow"></use>
+                          </svg>
+                        </span>
+                      </li>
+
+                      <li class="itemproduct__menu-item">
+                        <a class="itemproduct__menu-link" href="#">Розы</a>
+                        <span class="itemproduct__icons">
+                          <svg width="7" height="15">
+                            <use xlink:href="images/sprite.svg#itemproduct-arrow"></use>
+                          </svg>
+                        </span>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="#">Форум</a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="#">Отзывы</a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="#">Акции</a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="#">Новости</a>
+                  </li>
+                  <li class="header__menu-item header__menu-iteminfo">
+                    <a class="header__menu-link" href="#">Информация</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="header__contacts">
+              <ul class="header__social-list">
+                <li class="header__social-item">
+                  <a class="header__social-link" href="#">
+                    <svg width="27" height="27">
+                      <use xlink:href="images/sprite.svg#watsap-icon"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="header__social-item">
+                  <a class="header__social-link" href="#">
+                    <svg width="27" height="27">
+                      <use xlink:href="images/sprite.svg#instagram-icon"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="header__social-item">
+                  <a class="header__social-link" href="#">
+                    <svg width="28" height="27">
+                      <use xlink:href="images/sprite.svg#telegram-icon"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="header__social-item">
+                  <a class="header__social-link" href="#">
+                    <svg width="27" height="27">
+                      <use xlink:href="images/sprite.svg#facebook-icon"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <a class="header__contacts-phone" href="tel:+380678293030">+38 (067) 829 30 30</a>
+              <div class="header__actions">
+                <ul class="header__actions-list">
+                  <li class="header__actions-item">
+                    <a class="header__actions-link" href="#">
+                      <span class="header__actionsheart">2</span>
+                      <svg width="33" height="31">
+                        <use xlink:href="images/sprite.svg#heart-actions-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="header__actions-item">
+                    <a class="header__actions-link" href="#">
+                      <span class="header__actionscart">1</span>
+                      <svg width="33" height="31">
+                        <use xlink:href="images/sprite.svg#cart-actions-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <span class="header__actions-price">₴ 1 520</span>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="wrapper">
+      <main class="main">
+        <section class="payment">
+          <div class="container">
+            <div class="payment__top">
+              <div class="breadcrumbs">
+                <div class="container">
+                  <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
+                    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Информация</a></li>
+                    <li class="breadcrumbs__item breadcrumbs__item--active"><a class="breadcrumbs__link" href="#">Оплата и доставка</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <h2 class="payment__title title">Оплата и доставка</h2>
+            <div class="payment__content">
+              <p>
+                Flowers-Ukraine.com - это единая сеть партнеров, курьерская доставка цветов, что гарантирует доставку букетов и подарков по всей
+                Украине вовремя и в надлежащем виде. Доставка цветов по украине осуществляется в удобное для Вас время.
+              </p>
+              <p>
+                Цветы и корзины фруктов - это скоропортящийся продукт, поэтому компания оставляет за собой право изменения состава и внешнего вида
+                товара на 20-25% с сохранением общего вида и стоимости компонентов.
+              </p>
+              <p>
+                Доставка цветов в областные центры Украины - от 100 грн За ранние (с 7 до 9) и вечерние (с 21 до 23) временные промежутки доставки
+                доплата составляет 50грн.
+              </p>
+
+              <ul class="payment__list">
+                <div class="payment__list-title">В крупных городах: Киев, Днепропетровск, Одесса, Донецк, Харьков</div>
+                <li class="payment__list-item">доставка осуществляется бесплатно при заказе от 800 грн;</li>
+                <li class="payment__list-item">при заказе менее 800 грн доставка оплачивается отдельно и составляет 100 грн.</li>
+              </ul>
+              <p>Доставка цветов по районным цетрам и поселкам от 160 грн, более подробно уточнять у менеджера.</p>
+              <p>При высокой загруженности дорог время доставки гарантировать невозможно. Надеемся на Ваше понимание!</p>
+              <p>
+                Доставка заказов оплаченных после 18:00 по киевскому времени, при условии ранней доставки на следующий день, может быть перенесена на
+                более позднее время по согласованию с заказчиком.
+              </p>
+              <p>Вы можете оплатить товар:</p>
+            </div>
+            <div class="payment__partners">
+              <div class="payment__partners-images">
+                <img class="payment__partners-img" src="../images/payment/payment-1.png" alt="logo privat bank" />
+                <img class="payment__partners-img" src="../images/payment/payment-2.png" alt="logo visa" />
+                <img class="payment__partners-img" src="../images/payment/payment-3.png" alt="logo master card" />
+                <img class="payment__partners-img" src="../images/payment/payment-4.png" alt="logo portmone" />
+                <img class="payment__partners-img" src="../images/payment/payment-5.png" alt="logo yandex" />
+              </div>
+              <div class="payment__partners-text">
+                <p>
+                  «Приват24» – самый популярный Интернет-банк Украины. Наличными оплата производится предварительно перед фактом доставки наличными
+                  курьеру. Стоимость услуги выезда курьера составляет 20 грн. Оплата карточкой Visa/MasterCard В нашем магазине Вы можете оплатить
+                  заказ при помощи платежной (пластиковой) карты.Сервис проведения платежей обеспечивается Межбанковской системой электронной доставки
+                  и оплаты счетов Portmone.com с использованием современного и безопасного механизма авторизации платежных карт. Реквизиты платежных
+                  карт вводятся на сайте Portmone.com в защищенном режиме, и недоступны сотрудникам. Яндекс.Деньги После оплаты, пожалуйста напишите
+                  нам email с суммой проплаты и номером Вашего заказа. А также укажите эту информацию при переводе.
+                </p>
+                <p>Мы работаем по всей Украине!</p>
+              </div>
+            </div>
+            <div class="payment__offer">
+              <div class="payment__offer-title">Договор-оферта интернет-магазина</div>
+              <div class="payment__offer-text">
+                <p>
+                  Интернет-магазин flowers-ukraine.com (далее ПРОДАВЕЦ), публикует настоящий договор, являющийся публичным договором-офертой в адрес
+                  как физических, так и юридических лиц (далее ПОКУПАТЕЛЬ) о нижеследующем:
+                </p>
+                <p>Статья 1. Предмет договора-оферты.</p>
+                <p>
+                  1.1. ПРОДАВЕЦ обязуется произвести пополнение виртуального счета на сайте flowers-ukraine.com ПОКУПАТЕЛЮ, а ПОКУПАТЕЛЬ обязуется
+                  оплатить услугу любым удобным способом на сайте платежного шлюза WWW.INTERKASSA.COM.
+                </p>
+                <p>Статья 2. Момент заключения договора.</p>
+                <p>2.1. Текст данного Договора является публичной офертой</p>
+                <p>
+                  2.2. Факт оформления ЗАКАЗА УСЛУГИ у ПРОДАВЦА как самостоятельно, так и через оператора, является безоговорочным принятием данного
+                  Договора, и ПОКУПАТЕЛЬ рассматривается как лицо, вступившее с ПРОДАВЦОМ в договорные отношения.
+                </p>
+                <p>2.3. Оформление ЗАКАЗА УСЛУГИ и расчета осуществляется путем заказа ПОКУПАТЕЛЕМ в интернет-магазине flowers-ukraine.com</p>
+                <p>Статья 3. Стоимость УСЛУГИ.</p>
+                <p>
+                  3.1. Цены в интернет-магазине указаны в валюте страны покупателя. 3.2. Стоимость УСЛУГИ выбирается ПОКУПАТЕЛЕМ, от нее зависит
+                  сумма, которая будет зачислена ПОКУПАТЕЛЮ на виртуальный счет сайта flowers-ukraine.com
+                </p>
+                <p>3.3. Один ПОКУПАТЕЛЬ имеет право заказывать УСЛУГУ неограниченное количество раз.</p>
+                <p>Статья 4. Оплата УСЛУГИ.</p>
+                <p>
+                  4.1. Оплата услуги осуществляется ПОКУПАТЕЛЕМ одним из множества доступных способов, на сайте платежного шлюза WWW.INTERKASSA.COM
+                </p>
+                <p>
+                  4.2. В большинстве случаев, комиссия с ПОКУПАТЕЛЯ не взимается, однако платежный шлюз WWW.INTERKASSA.COM, а так же платежная система
+                  имеют право взимать
+                </p>
+                <p>Статья 5. Оказание УСЛУГИ.</p>
+                <p>
+                  5.1. В большинстве случаев оказание УСЛУГИ ПОКУПАТЕЛЮ осуществляется автоматической системой после проведения платежа в срок не
+                  более одного часа.
+                </p>
+                <p>
+                  5.2. В случае, если в течение одного часа УСЛУГА ПОКУПАТЕЛЮ не оказана, он обязан сообщить о возникновении проблемы консультанту по
+                  телефону и указать необходимые для проверки платежа сведения, в этом случае УСЛУГА будет оказана в ручном режиме в течение 48 часов
+                  с момента обращения.
+                </p>
+                <p>Статья 6. Права и обязанности сторон.</p>
+                <p>6.1. ПРОДАВЕЦ обязуется:</p>
+                <p>
+                  6.1.1. Не разглашать любую частную информацию ПОКУПАТЕЛЯ и не предоставлять доступ к этой информации третьим лицам, за исключением
+                  случаев, предусмотренных законодательством.
+                </p>
+                <p>
+                  6.1.2. Предоставить ПОКУПАТЕЛЮ возможность получения бесплатных консультаций по контактным данным, указанным на сайте магазина
+                  (flowers-ukraine.com). Объем консультаций ограничивается конкретными вопросами, связанными с выполнениями ЗАКАЗА.
+                </p>
+                <p>
+                  6.1.3. Оказать ПОКУПАТЕЛЮ УСЛУГУ пополнения счета на сайте flowers-ukraine.com автоматической системой в течение часа после оплаты
+                  услуги, либо в ручном режиме в течение 48 часов после обращение ПОКУПАТЕЛЯ в консультанту (см. п.5.2).
+                </p>
+                <p>6.1.4. ПРОДАВЕЦ оставляет за собой право изменять настоящий ДОГОВОР в одностороннем порядке до момента его заключения.</p>
+                <p>6.2. ПОКУПАТЕЛЬ обязуется:</p>
+                <p>
+                  6.2.1. До момента заключения ДОГОВОРА ознакомиться с содержанием договора-оферты, условиями оплаты и доставки на сайте магазина
+                  (flowers-ukraine.com).
+                </p>
+                <p>
+                  6.2.2. Предоставлять достоверную информацию о себе (контактные телефоны, адрес электронной почты) и реквизиты для доставки
+                  уведомления об успешном платеже.
+                </p>
+                <p>Статья 7. Ответственность сторон и разрешение споров.</p>
+                <p>
+                  7.1. Стороны несут ответственность за неисполнение или ненадлежащее исполнение настоящего ДОГОВОРА в порядке, предусмотренном
+                  настоящим ДОГОВОРОМ и действующим законодательством.
+                </p>
+                <p>7.3. ПРОДАВЕЦ не несет ответственности, если различные ожидания ПОКУПАТЕЛЯ об оказанной услуге оказались не оправданны.</p>
+                <p>
+                  7.4. ПРОДАВЕЦ не несет ответственности за частичное или полное неисполнение обязательств по оказанию УСЛУГИ, если они являются
+                  следствием форс-мажорных обстоятельств.
+                </p>
+                <p>
+                  7.5. ПОКУПАТЕЛЬ, оформляя ЗАКАЗ, несет ответственность за достоверность предоставляемой информации о себе, а так же подтверждает,
+                  что с условиями настоящего ДОГОВОРА ознакомлен и согласен.
+                </p>
+                <p>
+                  7.6. Все споры и разногласия, возникающие при исполнении СТОРОНАМИ обязательств по настоящему Договору, решаются путем переговоров.
+                  В случае невозможности их устранения, СТОРОНЫ имеют право обратиться за судебной защитой своих интересов.
+                </p>
+                <p>Статья 8. Возврат средств.</p>
+                <p>8.1. Все платежи на сайте flowers-ukraine.com конечны и не могут быть возвращены полностью или частично на счет ПОКУПАТЕЛЯ.</p>
+                <p>Статья 9. Форс-мажорные обстоятельства.</p>
+                <p>
+                  9.1. Стороны освобождаются от ответственности за неисполнение или ненадлежащее исполнение обязательств по Договору на время действия
+                  непреодолимой силы. Под непреодолимой силой понимаются чрезвычайные и непреодолимые при данных условиях обстоятельства,
+                  препятствующие исполнению своих обязательств СТОРОНАМИ по настоящему Договору. К ним относятся стихийные явления (землетрясения,
+                  наводнения и т. п.), обстоятельства общественной жизни (военные действия, чрезвычайные положения, крупнейшие забастовки, эпидемии и
+                  т. п.), запретительные меры государственных органов (запрещение перевозок, валютные ограничения, международные санкции запрета на
+                  торговлю и т. п.). В течение этого времени СТОРОНЫ не имеют взаимных претензий, и каждая из СТОРОН принимает на себя свой риск
+                  последствия форс-мажорных обстоятельств.
+                </p>
+                <p>Статья 10. Срок действия договора.</p>
+                <p>
+                  10.1. Настоящий ДОГОВОР вступает в силу с момента обращения в Интернет-магазин flowers-ukraine.com и оформления ЗАКАЗА, и
+                  заканчивается при полном исполнении обязательств СТОРОНАМИ.
+                </p>
+                <p>Статья 11. Реквизиты интернет магазина.</p>
+                <p>Адрес в сети Интернет - flowers-ukraine.com</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__top-inner">
+            <div class="footer__top-item footer__top-itemlogo">
+              <a class="footer__top-logo" href="#">
+                <img src="images/footer-logo.svg" alt="footer logo" />
+              </a>
+            </div>
+
+            <div class="footer__top-item">
+              <h4 class="footer__top-title">ИНФОРМАЦИЯ</h4>
+              <ul class="footer__top-list">
+                <li class="footer__top-listitem">
+                  <a class="footer__top-listlink" href="#">О НАС</a>
+                </li>
+                <li class="footer__top-listitem">
+                  <a class="footer__top-listlink" href="#">ДОСТАВКА И ОПЛАТА</a>
+                </li>
+                <li class="footer__top-listitem">
+                  <a class="footer__top-listlink" href="#">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer__top-item">
+              <h4 class="footer__top-title">СЛУЖБА ПОДДЕРЖКИ</h4>
+              <ul class="footer__top-list">
+                <li class="footer__top-listitem">
+                  <a class="footer__top-listlink" href="#">КАРТА САЙТА</a>
+                </li>
+                <li class="footer__top-listitem">
+                  <a class="footer__top-listlink" href="#">ВОЗВРАТ ТОВАРА</a>
+                </li>
+                <li class="footer__top-listitem">
+                  <a class="footer__top-listlink" href="#">СВЯЗАТЬСЯ С НАМИ</a>
+                </li>
+                <li class="footer__top-listitem">
+                  <a class="footer__top-listlink" href="#">ДЛЯ СОТРУДНИЧЕСТВА</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer__top-item">
+              <h4 class="footer__top-title">ЛИЧНЫЙ КАБИНЕТ</h4>
+              <ul class="footer__top-list">
+                <li class="footer__top-listitem">
+                  <a class="footer__top-listlink" href="#">ЛИЧНЫЙ КАБИНЕТ</a>
+                </li>
+                <li class="footer__top-listitem">
+                  <a class="footer__top-listlink" href="#">ИСТОРИЯ ЗАКАЗА</a>
+                </li>
+                <li class="footer__top-listitem">
+                  <a class="footer__top-listlink" href="#">ЗАКЛАДКИ</a>
+                </li>
+                <li class="footer__top-listitem">
+                  <a class="footer__top-listlink" href="#">СПИСОК НОВОСТЕЙ</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer__top-item">
+              <h4 class="footer__top-title">ДОПОЛНИТЕЛЬНО</h4>
+              <ul class="footer__top-list">
+                <li class="footer__top-listitem">
+                  <a class="footer__top-listlink" href="#">ПОДАРОЧНЫЕ</a>
+                </li>
+                <li class="footer__top-listitem">
+                  <a class="footer__top-listlink" href="#">СЕРТИФИКАТЫ</a>
+                </li>
+                <li class="footer__top-listitem">
+                  <a class="footer__top-listlink" href="#">АКЦИИ</a>
+                </li>
+                <li class="footer__top-listitem">
+                  <a class="footer__top-listlink" href="#">ЦВЕТЫ В ОФИС</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="footer__bottom-inner">
+            <p class="footer__bottom-text">Copyright © 2021. Все права защищены</p>
+
+            <ul class="footer__bottom-list">
+              <li class="footer__bottom-item">Способы оплаты:</li>
+              <li class="footer__bottom-item">
+                <a class="footer__bottom-link" href="#">
+                  <img src="images/partners-1.svg" alt="partners-icon" />
+                </a>
+              </li>
+              <li class="footer__bottom-item">
+                <a class="footer__bottom-link" href="#">
+                  <img src="images/partners-2.svg" alt="partners-icon" />
+                </a>
+              </li>
+              <li class="footer__bottom-item">
+                <a class="footer__bottom-link" href="#">
+                  <img src="images/partners-3.svg" alt="partners-icon" />
+                </a>
+              </li>
+              <li class="footer__bottom-item">
+                <a class="footer__bottom-link" href="#">
+                  <img src="images/partners-4.svg" alt="partners-icon" />
+                </a>
+              </li>
+              <li class="footer__bottom-item">
+                <a class="footer__bottom-link" href="#">
+                  <img src="images/partners-5.svg" alt="partners-icon" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
